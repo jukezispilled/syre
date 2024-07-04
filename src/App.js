@@ -60,7 +60,7 @@ function App() {
         $fairy is your girlfriend's favorite meme
       </div>
           {/* Small screen social media links */}
-          <div className="absolute bottom-5 left-5 flex flex-col items-center">
+          <div className="absolute z-10 bottom-5 left-5 flex flex-col items-center">
             <div className="flex flex-row">
               <a
                 href="https://x.com/"
