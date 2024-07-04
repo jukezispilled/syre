@@ -97,7 +97,7 @@ function App() {
 
   return (
     <div
-      className="h-screen w-screen flex justify-center items-center bg-orange-200 overflow-clip relative"
+      className="h-screen w-screen flex justify-center items-center bg-zinc-950 overflow-clip relative"
       style={{
         backgroundImage: `url(${backgroundImage})`,
         backgroundRepeat: 'no-repeat',
@@ -105,7 +105,7 @@ function App() {
         backgroundSize: 'contain',
       }}
     >
-      <div className='absolute top-0 left-0 right-0 border-y-2 border-black py-2 text-3xl md:text-7xl rotate-45 translate-x-[20%] translate-y-[50%] font-custom'>
+      <div className='absolute top-0 left-0 right-0 border-y-4 bg-white border-orange-300 py-2 text-3xl md:text-7xl rotate-45 translate-x-[20%] translate-y-[50%] font-custom'>
         <Marquee speed={170}>
           $maxi $maxi $maxi $maxi $maxi $maxi $maxi $maxi $maxi $maxi $maxi $maxi $maxi $maxi $maxi&nbsp;
         </Marquee>
@@ -121,10 +121,10 @@ function App() {
       
       <div className="absolute top-5 left-5 flex flex-col items-center z-10">
         <div className="flex flex-row">
-          <a href="https://x.com/fairydotsol" className="p-2 hover:scale-110 transition ease-in-out duration-200">
+          <a href="https://x.com/maxitoken" className="p-2 hover:scale-110 transition ease-in-out duration-200">
             <img src={Xlogo} alt="Xlogo" className="w-10 h-10 rounded-md" />
           </a>
-          <a href="https://t.me/fairysolana" className="p-2 hover:scale-110 transition ease-in-out duration-200">
+          <a href="https://t.me/" className="p-2 hover:scale-110 transition ease-in-out duration-200">
             <img src={TG} alt="Tg logo" className="w-10 h-10" />
           </a>
         </div>
