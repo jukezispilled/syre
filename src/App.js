@@ -105,7 +105,7 @@ function App() {
         backgroundSize: 'contain',
       }}
     >
-      <div className='absolute top-0 left-0 right-0 border-y-2 border-black py-2 text-3xl md:text-5xl rotate-45 translate-x-[20%] translate-y-[50%] font-custom'>
+      <div className='absolute top-0 left-0 right-0 border-y-2 border-black py-2 text-3xl md:text-7xl rotate-45 translate-x-[20%] translate-y-[50%] font-custom'>
         <Marquee speed={170}>
           $maxi $maxi $maxi $maxi $maxi $maxi $maxi $maxi $maxi $maxi $maxi $maxi $maxi $maxi $maxi&nbsp;
         </Marquee>
