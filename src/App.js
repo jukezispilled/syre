@@ -119,13 +119,13 @@ function App() {
         </AnimatedList>
       </div>
       
-      <div className="absolute top-5 left-5 flex flex-col items-center z-10">
+      <div className="absolute bottom-10 right-10 flex flex-col items-center z-10">
         <div className="flex flex-row">
           <a href="https://x.com/maxitoken" className="p-2 hover:scale-110 transition ease-in-out duration-200">
-            <img src={Xlogo} alt="Xlogo" className="w-10 h-10 rounded-md" />
+            <img src={Xlogo} alt="Xlogo" className="w-14 h-14 rounded-md" />
           </a>
           <a href="https://t.me/maxitoken" className="p-2 hover:scale-110 transition ease-in-out duration-200">
-            <img src={TG} alt="Tg logo" className="w-10 h-10" />
+            <img src={TG} alt="Tg logo" className="w-14 h-14" />
           </a>
         </div>
       </div>
@@ -144,7 +144,7 @@ function App() {
         </div>
       </div>
       
-      <div className='absolute bottom-5 left-5 right-5 flex justify-center'>
+      <div className='absolute bottom-10 left-10 flex justify-center'>
         <div className='flex flex-col sm:flex-row justify-center bg-slate-100 rounded-xl md:rounded-full z-10 items-center gap-1 md:gap-4 px-5 py-3 max-w-full border-2 border-slate-400'>
           <button
             onClick={handleCopy}
