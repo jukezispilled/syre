@@ -124,7 +124,7 @@ function App() {
           <a href="https://x.com/maxitoken" className="p-2 hover:scale-110 transition ease-in-out duration-200">
             <img src={Xlogo} alt="Xlogo" className="w-10 h-10 rounded-md" />
           </a>
-          <a href="https://t.me/" className="p-2 hover:scale-110 transition ease-in-out duration-200">
+          <a href="https://t.me/maxitoken" className="p-2 hover:scale-110 transition ease-in-out duration-200">
             <img src={TG} alt="Tg logo" className="w-10 h-10" />
           </a>
         </div>
