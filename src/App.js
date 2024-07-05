@@ -1,94 +1,23 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import backgroundImage from './bg1.png'; // Ensure the correct path to your bg.png';
+import backgroundImage from './bg2.png'; // Ensure the correct path to your bg.png';
 import Xlogo from "./XLogo.jpg";
 import TG from "./TG.png";
 import { cn } from "./lib/utils";
 import { AnimatedList } from './animated-list';
 import Marquee from "react-fast-marquee"; 
 
-let notifications = [
-  {
-    name: "Iggy Azalea",
-    description: "the cat is cute",
-    time: "15m ago",
-    icon: "iggy.png",
-    color: "#00C9A7",
-  },
-  {
-    name: "Sahil",
-    description: "you launched without me?",
-    time: "12m ago",
-    icon: "sahil.png",
-    color: "#00C9A7",
-  },
-  {
-    name: "yelo",
-    description: "when can I call it",
-    time: "10m ago",
-    icon: "yelo.jpg",
-    color: "#00C9A7",
-  },
-  {
-    name: "Ansem",
-    description: "let me run the socials dawg",
-    time: "7m ago",
-    icon: "ansem.jpg",
-    color: "#00C9A7",
-  },
-  {
-    name: "Jason Derulo",
-    description: "bought some",
-    time: "5m ago",
-    icon: "JasonDerulo.jpg",
-    color: "#00C9A7",
-  },
-];
-
-notifications = Array.from({ length: 1 }, () => notifications).flat();
-
-const Notification = ({ name, description, icon, color, time }) => {
-  return (
-    <figure
-      className={cn(
-        "relative mx-auto min-h-fit w-full max-w-[400px] transform cursor-pointer overflow-hidden rounded-2xl p-4",
-        // animation styles
-        "transition-all duration-200 ease-in-out hover:scale-[103%]",
-        // light styles
-        "bg-white [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)]",
-        // dark styles
-        "transform-gpu dark:bg-transparent dark:backdrop-blur-md dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]",
-      )}
-    >
-      <div className="flex flex-row items-center gap-3">
-        <div
-          className="flex h-10 w-10 items-center justify-center rounded-2xl overflow-hidden"
-          style={{
-            backgroundColor: color,
-          }}
-        >
-          <img src={icon} alt="Icon" className="w-full h-full object-cover" />
-        </div>
-        <div className="flex flex-col overflow-hidden">
-          <figcaption className="flex flex-row items-center whitespace-pre text-lg font-medium dark:text-white ">
-            <span className="text-sm sm:text-lg">{name}</span>
-            <span className="mx-1">·</span>
-            <span className="text-xs text-gray-500">{time}</span>
-          </figcaption>
-          <p className="text-sm font-normal dark:text-white/60">
-            {description}
-          </p>
-        </div>
-      </div>
-    </figure>
-  );
-};
+const CopyIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+    <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 7.5V6.108c0-1.135.845-2.098 1.976-2.192.373-.03.748-.057 1.123-.08M15.75 18H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08M15.75 18.75v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5A3.375 3.375 0 0 0 6.375 7.5H5.25m11.9-3.664A2.251 2.251 0 0 0 15 2.25h-1.5a2.251 2.251 0 0 0-2.15 1.586m5.8 0c.065.21.1.433.1.664v.75h-6V4.5c0-.231.035-.454.1-.664M6.75 7.5H4.875c-.621 0-1.125.504-1.125 1.125v12c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V16.5a9 9 0 0 0-9-9Z" />
+  </svg>
+);
 
 function App() {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText('B53nkGQmsQH9EC4Qgx1LtwE17FAs8p3EPmSrK7VMpump');
+    navigator.clipboard.writeText('soon...');
     setCopied(true);
     setTimeout(() => {
       setCopied(false);
@@ -102,58 +31,46 @@ function App() {
         backgroundImage: `url(${backgroundImage})`,
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center center',
-        backgroundSize: 'contain',
+        backgroundSize: 'cover',
       }}
     >
-      <div className='absolute top-0 left-0 right-0 border-y-4 bg-white border-orange-300 py-2 text-3xl md:text-7xl rotate-45 translate-x-[20%] translate-y-[50%] font-custom'>
-        <Marquee speed={170}>
-          $maxi $maxi $maxi $maxi $maxi $maxi $maxi $maxi $maxi $maxi $maxi $maxi $maxi $maxi $maxi&nbsp;
-        </Marquee>
+      <div className='absolute top-7 left-7 text-5xl md:text-8xl font-custom'>
+        mika
       </div>
       
-      <div className='absolute top-5 left-5 right-5 z-20'>
-        <AnimatedList>
-          {notifications.map((item, idx) => (
-            <Notification {...item} key={idx} />
-          ))}
-        </AnimatedList>
-      </div>
-      
-      <div className="absolute bottom-10 right-10 flex flex-col items-center z-10">
+      <div className="absolute top-10 right-10 flex flex-col items-center z-10">
         <div className="flex flex-row">
-          <a href="https://x.com/maxitoken" className="p-2 hover:scale-110 transition ease-in-out duration-200">
+          <a href="https://x.com/" className="p-2 hover:scale-110 transition ease-in-out duration-200">
             <img src={Xlogo} alt="Xlogo" className="w-14 h-14 rounded-md" />
           </a>
-          <a href="https://t.me/maxitoken" className="p-2 hover:scale-110 transition ease-in-out duration-200">
+          <a href="https://t.me/" className="p-2 hover:scale-110 transition ease-in-out duration-200">
             <img src={TG} alt="Tg logo" className="w-14 h-14" />
           </a>
         </div>
       </div>
 
       <div className="absolute inset-0 flex flex-col justify-center items-center">
-        <div
-          className="flex justify-center items-center h-full"
-        >
+        <div className="flex justify-center items-center h-full">
           <motion.img
-            whileHover={{ scale: 1.1, rotate: 10 }}
+            whileHover={{ scale: 1.05, y: -10 }}
             transition={{ type: 'spring', stiffness: 300 }}
-            src="/maxi.png"
+            src="/mika.png"
             alt="Tunes"
             className="-mt-[7.5%] w-[50%] md:w-[30%] h-auto border rounded-md"
           />
         </div>
       </div>
       
-      <div className='absolute bottom-10 left-10 flex justify-center'>
+      <div className='absolute bottom-10 flex justify-center'>
         <div className='flex flex-col sm:flex-row justify-center bg-slate-100 rounded-xl md:rounded-full z-10 items-center gap-1 md:gap-4 px-5 py-3 max-w-full border-2 border-slate-400'>
           <button
             onClick={handleCopy}
-            className="text-sm bg-orange-400 text-white py-2 px-4 rounded-full md:hover:bg-orange-500 border-2 border-white transition-colors duration-300 z-10 whitespace-nowrap"
+            className="text-sm bg-indigo-400 text-white py-2 px-4 rounded-full md:hover:bg-indigo-500 border-2 border-white transition-colors duration-300 z-10 whitespace-nowrap"
           >
-            {copied ? 'Copied!' : 'Copy'}
+            {copied ? 'Copied!' : <CopyIcon />}
           </button>
           <div className='text-xs sm:text-sm md:text-base overflow-x-auto whitespace-nowrap'>
-          B53nkGQmsQH9EC4Qgx1LtwE17FAs8p3EPmSrK7VMpump
+            coming soon...
           </div>
         </div>
       </div>
