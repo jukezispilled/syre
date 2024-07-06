@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import backgroundImage from './bg2.png'; // Ensure the correct path to your bg.png';
+import backgroundImage from './bg3.jpg'; // Ensure the correct path to your bg.png';
 import Xlogo from "./XLogo.jpg";
 import TG from "./TG.png";
 import { cn } from "./lib/utils";
@@ -17,7 +17,7 @@ function App() {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText('3LKmLkZXCPeKbsAQsZGuKRRZgGheDvhj1AcaYsKwpump');
+    navigator.clipboard.writeText('soon...');
     setCopied(true);
     setTimeout(() => {
       setCopied(false);
@@ -34,8 +34,8 @@ function App() {
         backgroundSize: 'cover',
       }}
     >
-      <div className='absolute top-7 left-7 text-5xl md:text-8xl font-custom'>
-        mika
+      <div className='absolute top-7 left-7 text-5xl md:text-8xl font-custom text-white'>
+        SYRE
       </div>
       
       <div className="absolute top-10 right-10 flex flex-col items-center z-10">
@@ -52,9 +52,9 @@ function App() {
       <div className="absolute inset-0 flex flex-col justify-center items-center">
         <div className="flex justify-center items-center h-full">
           <motion.img
-            whileHover={{ scale: 1.05, y: -10 }}
+            whileHover={{ scale: 1.1, rotate: 5 }}
             transition={{ type: 'spring', stiffness: 300 }}
-            src="/mika.png"
+            src="/syre.png"
             alt="Tunes"
             className="-mt-[7.5%] w-[50%] md:w-[30%] h-auto border rounded-md"
           />
@@ -70,7 +70,7 @@ function App() {
             {copied ? 'Copied!' : <CopyIcon />}
           </button>
           <div className='text-xs sm:text-sm md:text-base overflow-x-auto whitespace-nowrap'>
-          3LKmLkZXCPeKbsAQsZGuKRRZgGheDvhj1AcaYsKwpump
+            soon...
           </div>
         </div>
       </div>
