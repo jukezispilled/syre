@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 import backgroundImage from './bg3.jpg'; // Ensure the correct path to your bg.png';
 import Xlogo from "./XLogo.jpg";
 import TG from "./TG.png";
-import { cn } from "./lib/utils";
 import { AnimatedList } from './animated-list';
 import Marquee from "react-fast-marquee"; 
+import ShineBorder from './shineborder';
 
 const CopyIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
@@ -34,29 +34,31 @@ function App() {
         backgroundSize: 'cover',
       }}
     >
-      <div className='absolute top-7 left-7 text-5xl md:text-8xl font-custom text-white'>
-        SYRE
+      <div className='font-custom py-2 absolute top-0 w-[115%] -rotate-45 -translate-x-[12.5%] text-3xl md:text-8xl text-indigo-500 bg-indigo-200 border border-indigo-300'>
+        <Marquee>
+          SYRE SYRE SYRE SYRE SYRE SYRE SYRE SYRE SYRE SYRE SYRE SYRE SYRE SYRE SYRE SYRE SYRE
+        </Marquee>
       </div>
       
       <div className="absolute top-10 right-10 flex flex-col items-center z-10">
         <div className="flex flex-row">
           <a href="https://x.com/mikamikasol" className="p-2 hover:scale-110 transition ease-in-out duration-200">
-            <img src={Xlogo} alt="Xlogo" className="w-14 h-14 rounded-md" />
+            <img src={Xlogo} alt="Xlogo" className="w-12 h-12 rounded-md" />
           </a>
           <a href="https://t.me/mikamikasol" className="p-2 hover:scale-110 transition ease-in-out duration-200">
-            <img src={TG} alt="Tg logo" className="w-14 h-14" />
+            <img src={TG} alt="Tg logo" className="w-12 h-12" />
           </a>
         </div>
       </div>
 
       <div className="absolute inset-0 flex flex-col justify-center items-center">
-        <div className="flex justify-center items-center h-full">
+        <div className="flex justify-center items-center w-[40%] md:w-[25%]">
           <motion.img
             whileHover={{ scale: 1.1, rotate: 5 }}
             transition={{ type: 'spring', stiffness: 300 }}
             src="/syre.png"
             alt="Tunes"
-            className="-mt-[7.5%] w-[50%] md:w-[30%] h-auto border rounded-md"
+            className="-mt-[7.5%] h-auto border-2 w-full border-indigo-400 rounded-md"
           />
         </div>
       </div>
