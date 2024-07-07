@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import backgroundImage from './bg3.jpg'; // Ensure the correct path to your bg.png';
+import backgroundImage from './scooby1.png'; // Ensure the correct path to your bg.png';
 import Xlogo from "./XLogo.jpg";
 import TG from "./TG.png";
 import { AnimatedList } from './animated-list';
@@ -17,7 +17,7 @@ function App() {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText('DB1a5jV6URYMKxv6H6JhMTu2X7RqRs9dSy9p4PXmpump');
+    navigator.clipboard.writeText('soon...');
     setCopied(true);
     setTimeout(() => {
       setCopied(false);
@@ -25,56 +25,61 @@ function App() {
   };
 
   return (
-    <div
-      className="h-screen w-screen flex justify-center items-center bg-zinc-950 overflow-clip relative"
-      style={{
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center center',
-        backgroundSize: 'cover',
-      }}
-    >
-      <div className='font-custom py-2 absolute top-0 w-[115%] -rotate-45 -translate-x-[12.5%] text-3xl md:text-8xl text-indigo-500 bg-indigo-200 border border-indigo-300'>
-        <Marquee>
-          SYRE SYRE SYRE SYRE SYRE SYRE SYRE SYRE SYRE SYRE SYRE SYRE SYRE SYRE SYRE SYRE SYRE
-        </Marquee>
-      </div>
-      
-      <div className="absolute top-10 right-10 flex flex-col items-center z-10">
-        <div className="flex flex-row">
-          <a href="https://x.com/syretoken" className="p-2 hover:scale-110 transition ease-in-out duration-200">
-            <img src={Xlogo} alt="Xlogo" className="w-12 h-12 rounded-md" />
-          </a>
-          <a href="https://t.me/SYREONSOL" className="p-2 hover:scale-110 transition ease-in-out duration-200">
-            <img src={TG} alt="Tg logo" className="w-12 h-12" />
-          </a>
+    <div>
+      <div
+        className="h-screen w-screen flex justify-center items-center bg-zinc-950 overflow-clip relative"
+        style={{
+          backgroundImage: `url(${backgroundImage})`,
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center center',
+          backgroundSize: 'cover',
+        }}
+      >
+        <div className='font-custom py-2 absolute top-0 w-[115%] -rotate-45 -translate-x-[12.5%] text-3xl md:text-8xl text-indigo-500 bg-indigo-200 border border-indigo-300'>
+          <Marquee>
+            RUBY DOO RUBY DOO RUBY DOO RUBY DOO RUBY DOO RUBY DOO RUBY DOO RUBY DOO RUBY DOO RUBY DOO&nsbp;
+          </Marquee>
         </div>
-      </div>
-
-      <div className="absolute inset-0 flex flex-col justify-center items-center">
-        <div className="flex justify-center items-center w-[40%] md:w-[25%]">
-          <motion.img
-            whileHover={{ scale: 1.1, rotate: 5 }}
-            transition={{ type: 'spring', stiffness: 300 }}
-            src="/syre.png"
-            alt="Tunes"
-            className="-mt-[7.5%] h-auto border-2 w-full border-indigo-400 rounded-md"
-          />
-        </div>
-      </div>
-      
-      <div className='absolute bottom-10 flex justify-center'>
-        <div className='flex flex-col sm:flex-row justify-center bg-slate-100 rounded-xl md:rounded-full z-10 items-center gap-1 md:gap-4 px-5 py-3 max-w-full border-2 border-slate-400'>
-          <button
-            onClick={handleCopy}
-            className="text-sm bg-indigo-400 text-white py-2 px-4 rounded-full md:hover:bg-indigo-500 border-2 border-white transition-colors duration-300 z-10 whitespace-nowrap"
-          >
-            {copied ? 'Copied!' : <CopyIcon />}
-          </button>
-          <div className='text-xs sm:text-sm md:text-base overflow-x-auto whitespace-nowrap'>
-          DB1a5jV6URYMKxv6H6JhMTu2X7RqRs9dSy9p4PXmpump
+        
+        <div className="absolute top-10 right-10 flex flex-col items-center z-10">
+          <div className="flex flex-row">
+            <a href="https://x.com/" className="p-2 hover:scale-110 transition ease-in-out duration-200">
+              <img src={Xlogo} alt="Xlogo" className="w-12 h-12 rounded-md" />
+            </a>
+            <a href="https://t.me/L" className="p-2 hover:scale-110 transition ease-in-out duration-200">
+              <img src={TG} alt="Tg logo" className="w-12 h-12" />
+            </a>
           </div>
         </div>
+
+        <div className="absolute inset-0 flex flex-col justify-center items-center">
+          <div className="flex justify-center items-center w-[40%] md:w-[27%]">
+            <motion.img
+              whileHover={{ scale: 1.1, rotate: 5 }}
+              transition={{ type: 'spring', stiffness: 300 }}
+              src="ruby.png"
+              alt="Tunes"
+              className="-mt-[7.5%] h-auto border-2 w-full border-indigo-400 rounded-md"
+            />
+          </div>
+        </div>
+        
+        <div className='absolute bottom-10 flex justify-center'>
+          <div className='flex flex-col sm:flex-row justify-center bg-slate-100 rounded-xl md:rounded-full z-10 items-center gap-1 md:gap-4 px-5 py-3 max-w-full border-2 border-slate-400'>
+            <button
+              onClick={handleCopy}
+              className="text-sm bg-purple-600 text-white py-2 px-4 rounded-full md:hover:bg-purple-800 border-2 border-white transition-colors duration-300 z-10 whitespace-nowrap"
+            >
+              {copied ? 'Copied!' : <CopyIcon />}
+            </button>
+            <div className='text-sm md:text-xl overflow-x-auto whitespace-nowrap font-custom'>
+              coming soon...
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className='h-min py-[20%] w-screen flex justify-center items-center bg-[#7FDAD8]'>
+        <img className='w-[75%] rounded-xl border-2 border-purple-700' src="proof.png"></img>
       </div>
     </div>
   );
