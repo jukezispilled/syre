@@ -17,7 +17,7 @@ function App() {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText('soon...');
+    navigator.clipboard.writeText('4c6RFHHkxcGPEN2riJQwFFiU6FU2KqXSwmFojQJ5pump');
     setCopied(true);
     setTimeout(() => {
       setCopied(false);
@@ -73,7 +73,7 @@ function App() {
               {copied ? 'Copied!' : <CopyIcon />}
             </button>
             <div className='text-sm md:text-xl overflow-x-auto whitespace-nowrap font-custom'>
-              coming soon...
+            4c6RFHHkxcGPEN2riJQwFFiU6FU2KqXSwmFojQJ5pump
             </div>
           </div>
         </div>
